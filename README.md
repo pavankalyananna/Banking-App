@@ -1,70 +1,100 @@
+  
+# 🏦 Banking Application
 
-# Banking-App
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-Build-blue)
+![REST API](https://img.shields.io/badge/API-REST-lightgrey)
 
-A simple **Banking Application** built in Java using Spring Boot.  
-This application demonstrates account management, DTO mapping, and basic banking operations.
+A **simple Banking Application** built using **Java & Spring Boot**.  
+This project focuses on clean REST API design, DTO mapping, and core banking operations.
 
-## Features
+---
+
+## ✨ Features
 
 - Create, read, update, and delete bank accounts
-- Map between entity and DTO using a mapper
-- Uses Spring Boot for RESTful API development
+- Deposit and withdraw money
+- Clean separation of **Entity ↔ DTO**
+- RESTful API design using Spring Boot
 
-## Technologies Used
+---
 
-- Java 17
-- Spring Boot
-- Maven
+## 🛠 Tech Stack
 
+| Technology | Purpose |
+|----------|--------|
+| Java 17 | Core language |
+| Spring Boot | REST API framework |
+| Maven | Build & dependency management |
 
-## Getting Started
+---
 
-### Prerequisites
+## 🚀 Getting Started
 
-- Java JDK 17+
-- Maven
-- IDE (IntelliJ IDEA, Eclipse, etc.)
+### 📌 Prerequisites
 
-### Run the Application
+Make sure you have:
+- **Java JDK 17+**
+- **Maven**
+- Any IDE (IntelliJ IDEA recommended)
 
-1. Clone the repository:
+---
+
+### ▶️ Run the Application
+
+#### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/pavankalyananna/Banking-App.git
 ````
 
-2. Navigate to the project directory:
+#### 2️⃣ Move into the project directory
 
 ```bash
 cd Banking-App
 ```
 
-3. Build the project:
+#### 3️⃣ Build the project
 
 ```bash
 mvn clean install
 ```
 
-4. Run the Spring Boot application:
+#### 4️⃣ Start the application
 
 ```bash
 mvn spring-boot:run
 ```
 
-5. The API will be available at:
+#### 5️⃣ Access the API
 
+```text
+http://localhost:8080
 ```
-http://localhost:8080/
-```
 
-## Usage
+---
 
-You can test the APIs using **Postman** or any REST client.
-Typical endpoints include:
+## 📡 API Endpoints
 
-* `POST /api/accounts` - Create a new account
-* `GET /api/accounts/{id}` - Get account details
-* `PUT /api/accounts/{id}/deposit` - deposit 
-* `PUT /api/accounts/{id}/withdraw` - withdraw 
-* `DELETE /api/accounts/{id}` - Delete account
+| Method | Endpoint                      | Description           |
+| ------ | ----------------------------- | --------------------- |
+| POST   | `/api/accounts`               | Create a new account  |
+| GET    | `/api/accounts/{id}`          | Fetch account details |
+| PUT    | `/api/accounts/{id}/deposit`  | Deposit money         |
+| PUT    | `/api/accounts/{id}/withdraw` | Withdraw money        |
+| DELETE | `/api/accounts/{id}`          | Delete an account     |
 
+---
 
+## 🧪 Testing
+
+Use **Postman**, **curl**, or any REST client to test the APIs.
+
+---
+
+## 📌 Notes
+
+* This project is intended for **learning and demonstration purposes**
+* No authentication or database persistence yet
+
+---
